@@ -1,0 +1,31 @@
+.userTop{
+    background-color: #FF5951;
+    padding: 50px 20px;
+}
+.userPh{
+    width: 120px;
+height: 120px;
+border-radius: 60px;
+overflow: hidden;
+}
+.font32 {
+    font-size: 32px;
+  }
+
+.memberNumber{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.font60{
+    font-size: 60px;
+}
+
+.linkIcon {
+    width: 9px;
+    height: 17px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAiCAYAAABStIn6AAAABHNCSVQICAgIfAhkiAAAALRJREFUSInt1s0JwjAYBuDH9u4EuoC6gE7gBl1DcBC7iJ4VvTuBGxQHcAE9tPhTerBpDhV8IZAE+vAlgTSUybDRMRmuVQvGEsxraBCWYo8xptXcDCMc2kJiYOlbvwmDc1uoCVugwOXbyurJvU7yqjyE4ETFtrGwIU5/rF/YctAB22FSjW9JaFm4d/j2Wc1RbWkxkNab/UeaE+UaiXKx9RdZx0Dy30b4fNYEI6nyd1zghlUo9AAYhmytHu4iUQAAAABJRU5ErkJggg==') no-repeat center center;
+    background-size: 9px 17px;
+  }
+  

@@ -1,0 +1,72 @@
+.subMain{
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+.subNav {
+display: flex;
+flex-direction: column;
+color: #666262;
+justify-content: center;
+align-items: center;
+height: 94px;
+background-color: #EEEEEE;
+}
+
+.subNav .line {
+width: 40px;
+height: 6px;
+border-radius: 3px;
+background: transparent
+}
+
+.subNav.con {
+color: #FF5951;
+}
+
+.subNav.con .line {
+background: #FF5951;
+}
+
+
+.orderSeach{
+  background: #fff;
+  padding: 0 20px;
+}
+.orderSeachInput{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.scrollviewGoods {
+  height: 150px;
+  white-space: nowrap;
+  background-color: #fff;
+  padding: 20px 0;
+}
+
+
+.goodInfo {
+  width: 150px;
+  display: inline-block;
+  height: 150px;
+  margin-right: 20px;
+  vertical-align: bottom;
+}
+
+
+.textInfo {
+  display: inline-block;
+  height: 150px;
+  margin-right: 20px;
+  width: auto;
+}
+
+.linkIcon {
+  width: 18px;
+  height: 34px;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAiCAYAAABStIn6AAAABHNCSVQICAgIfAhkiAAAALRJREFUSInt1s0JwjAYBuDH9u4EuoC6gE7gBl1DcBC7iJ4VvTuBGxQHcAE9tPhTerBpDhV8IZAE+vAlgTSUybDRMRmuVQvGEsxraBCWYo8xptXcDCMc2kJiYOlbvwmDc1uoCVugwOXbyurJvU7yqjyE4ETFtrGwIU5/rF/YctAB22FSjW9JaFm4d/j2Wc1RbWkxkNab/UeaE+UaiXKx9RdZx0Dy30b4fNYEI6nyd1zghlUo9AAYhmytHu4iUQAAAABJRU5ErkJggg==') no-repeat center center;
+  background-size: 18px 34px;
+}

@@ -1,0 +1,246 @@
+page {
+  height: 100%;
+}
+
+.main,
+page,
+body {
+  background: #f7f7f7;
+  min-height: 100%;
+  font-size: 26px;
+  font-family: PingFang-SC-Regular;
+  color: #22262E
+}
+
+.Main {
+  min-height: 100%;
+  background: #f7f7f7;
+}
+
+.fixedMain {
+  padding-bottom: 122px;
+}
+
+.fixedButtom {
+  // height: 100px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top: 2px solid rgba(237, 237, 237, 0.9);
+}
+
+.fixedPadding{
+  box-sizing: border-box;
+  padding: 20px 40px;
+}
+
+.fixRightButton {
+  width: 240px;
+  height: 100px;
+  background: linear-gradient(247deg, #FE3B30 4%, #FE3B30 4%, #FF5951 100%, #FF5951 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.templates {
+  display: flex;
+}
+
+.templates .adaption {
+  flex: 1
+}
+
+.alignItems {
+  align-items: center;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.padding20 {
+  padding: 20px;
+}
+
+.paddingLR {
+  padding: 0 20px;
+}
+
+.marginTop {
+  margin-top: 20px;
+}
+
+.marginLeft {
+  margin-left: 20px;
+}
+
+.whiteBackground {
+  background-color: #fff;
+}
+
+.borderRadius{
+  border-radius:16px ;
+}
+
+.marginTop10 {
+  margin-top: 10px;
+}
+
+.color3 {
+  color: #333333;
+}
+.colorGray {
+  color: #8C8C8C;
+}
+
+.colorRed {
+  color: #FF5951;
+}
+.colorWhite {
+  color: #ffffff;
+}
+
+.font36 {
+  font-size: 36px;
+}
+.font34 {
+  font-size: 34px;
+}
+
+.font30 {
+  font-size: 30px;
+}
+
+.font28 {
+  font-size: 28px;
+}
+.font24 {
+  font-size: 24px;
+}
+
+.font22 {
+  font-size: 22px;
+}
+// 蒙层部分
+@keyframes slideBgUp {
+  from {
+    visibility: visible;
+    background: transparent;
+  }
+
+  to {
+    background: rgba(0, 0, 0, .3);
+  }
+}
+
+@keyframes slideBgDown {
+  from {
+    background: rgba(0, 0, 0, .3);
+  }
+
+  to {
+    background: transparent;
+    visibility: hidden;
+  }
+}
+
+
+// 内容部分
+// 浏览器坐标系是y轴向下为正，x轴向右为正，z轴是屏幕到用户的眼睛的方向为正
+@keyframes slideContentUp {
+  from {
+    // max-height: 0; 实现方法1，把内容最大高度设为0
+    transform: translate3d(0, 100%, 0); // 实现方法2，把内容整体向下移动
+    // 此时其他的css中已经把内容容器定位到了底部
+  }
+
+  to {
+    // max-height: 1000px;  设置足够的最大高度
+    transform: translate3d(0, 0, 0); // 把内容整体回到原来的状态
+  }
+}
+
+@keyframes slideContentDown {
+  from {
+    transform: translate3d(0, 0, 0);
+    // max-height: 1000px;
+  }
+
+  to {
+    // max-height: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+.mask,
+.mask_down {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  animation: slideBgUp 0.3s ease-in both;
+}
+
+.mask_down {
+  animation: slideBgDown 0.3s ease-in both;
+}
+
+
+.pop {
+  animation: slideContentUp 0.3s ease-in both;
+  position: absolute;
+  bottom: 0;
+  border-radius: 24px 24px 0 0;
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0 20px 0;
+  background-color: #fff;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.pop .goodsList{
+    border: 0 none;
+    padding: 0;
+}
+
+.pop_down {
+  animation: slideContentDown 0.3s ease-in both;
+  position: absolute;
+  bottom: 0;
+  border-radius: 24px 24px 0 0;
+  overflow: hidden;
+}
+.buttonMain{
+  margin-top: 40px;
+  border-top: 2px solid rgba(237, 237, 237, 0.9);
+  padding: 20px 40px 0;
+}
+button[type=primary].btn-orage {
+  background-image: linear-gradient(#FE3B30, #FF5951);
+  color: #fff;
+  border-radius: 60px;
+  margin:0;
+  border: 2px solid transparent;
+  font-size: 30px;
+}
+
+button[type=primary].btn-orage-hover {
+  background-image: linear-gradient(#FF5951, #FE3B30);
+}
+button[type=''].btn {
+  border: 1px solid #999393;
+  color: #262424;
+  border-radius: 60px;
+  font-size: 30px;
+}
+
+button[type=''].btn-hover {
+  // background-image: linear-gradient(#FF5951, #FE3B30);
+}
+
