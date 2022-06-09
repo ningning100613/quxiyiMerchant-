@@ -1,0 +1,62 @@
+.detailsMain{
+  padding-bottom: 20px;
+}
+.detailsTitle{
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.pickerMain{
+  border: 1px solid #D8D8D8;
+  border-radius: 10px;
+  padding: 10px 20px;
+  min-width: 200px;
+}
+
+.downIcon{
+  width: 10px;
+  height: 10px;
+  font-size: 0;
+  line-height: 0;
+  border-right: 1px solid #D8D8D8;
+  border-bottom: 1px solid #D8D8D8;
+  transform:rotate(45deg)
+}
+.codeInput{
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+
+
+.goodsList {
+  // background-color: #fff;
+  // border-bottom: 2px solid rgba(237, 237, 237, 0.9);
+  // padding: 20px;
+  // margin-top: 20px;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.productPhOrder {
+  width: 128px;
+  height: 128px;
+  margin-right: 20px;
+  display: inline-block;
+  background: #f8f8f8;
+}
+
+.productCenter {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 128px;
+}
+
+.phoneIcon {
+  width: 30px;
+  height: 30px;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAm9JREFUWIXNl7FuE0EQhr/ZW1/OEUiGiA6QpZwNQkJKg1wgEKKhDQ0ND0AJj8BLQB8JKCESNFRIdBQoKQ1OpBXUiVwAMee9G4rYwTGX+JKcHbbd2fn+nf92RieUuK7E8RNE9He/v+Kc6xY5I2XBm4uNVyos7ybVjcT720VElCJgCE9NVAUIst5OURGmTHig/STQfpKaqKpIHAaVt5POB2XCRb0Tsq7A2dTMRYK/sHB+4dr29vbrg3Ic24JRuNE+Rv2PxPtLAKG1n1RsPZVKGGS9HeBNZ6PzMC/PsSzYD/dkUkGRoGIrz5xz3cT7lqh3QzuA+804flqKgPGyG+0TZL10CGrEjZfOuS4qn9E0BUCMReVGXr4jWZDnubH2Xub9e0UWUxMFgxewpcjCSFxirL3ebrfdsSuQB0+8b7XbbZd43xJ0c1gJFXtxFK4it/LghSpQr9drYVB5ocLdcfjoG6/X67XQ2u+KOZOaiECTPXin01k/KL+dCLf2o0J8GBwgDCrPgbnMhIXhh1bgL1wmwnft0QeZiQKjvjD8QAGzgucKmCUcxl7BieBZunVU+L4KnPDmuXGFBZwWHAYWhNa+Ow04gDQajSVRXfOmyqzhACZQrQ20IOpDA49mBYcCs2A4A6YBnyhgbO6XDoecWZDBh2YcA6CwM+nDPLGAVKQrqgB4Mz++Xx0MlqnAYdAHmnH8RZHLIL392xoJ+m1acBhYkHjfiqxdAv0noOf9+rTg/8USgKtxfCeDxwq1GUG7qK583dxcFYBGHP9UsfMl/ipOWIpRT+L9ub0+IDn+T1cCv2DYB0RuiqbLQjo7ASKrzrnuH2+Rl9P3UgErAAAAAElFTkSuQmCC') no-repeat center center;
+  background-size: 30px 30px;
+}

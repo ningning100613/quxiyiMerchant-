@@ -193,21 +193,17 @@ body {
 
 .pop {
   animation: slideContentUp 0.3s ease-in both;
-  position: absolute;
-  bottom: 0;
-  border-radius: 24px 24px 0 0;
+  position: fixed;
+  border-radius: 24px;
   overflow: hidden;
-  width: 100%;
-  padding: 20px 0 20px 0;
+  width: 690px;
+  left: 20px;
+  top: 40%;
+  padding: 20px;
   background-color: #fff;
-  overflow-y: auto;
   box-sizing: border-box;
 }
 
-.pop .goodsList{
-    border: 0 none;
-    padding: 0;
-}
 
 .pop_down {
   animation: slideContentDown 0.3s ease-in both;
@@ -242,5 +238,20 @@ button[type=''].btn {
 
 button[type=''].btn-hover {
   // background-image: linear-gradient(#FF5951, #FE3B30);
+}
+
+
+
+
+button[size=mini].btn-orage {
+  border-radius: 10px;
+  font-size: 26px;
+}
+button::after{
+  border: 0 none;
+}
+button[size=mini].btn {
+  border-radius: 10px;
+  font-size: 26px;
 }
 
