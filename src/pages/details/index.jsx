@@ -156,7 +156,7 @@ export default class User extends Component {
             onClick={this.changeVisible}>
             <View className={maskVisible ? 'pop' : 'pop_down'}>
 
-              <View>
+              <View className='marginTop'>
                 <Input className='codeInput' type='text' placeholder='请输入编码' focus />
               </View>
               <View className='buttonMain'>

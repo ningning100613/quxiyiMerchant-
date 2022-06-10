@@ -18,8 +18,8 @@ borderStyle: "black",
     list: [
       {
           pagePath: "pages/order/index",
-          iconPath: "tabBar/home.png",
-          selectedIconPath: "tabBar/homecon.png",
+          iconPath: "tabBar/shop.png",
+          selectedIconPath: "tabBar/shopcon.png",
           text: "订单"
       },
       {

@@ -45,7 +45,7 @@ export default class User extends Component {
             <Text className='font60 colorRed'>￥12345</Text>
           </View>
           <View className='marginTop10'>
-            <Text className='colorGray'>账户余额：￥1900</Text>
+            <Text className='colorGray'>账户余额：</Text><Text className='font36'>￥1900</Text>
           </View>
         </View>
 
@@ -53,11 +53,11 @@ export default class User extends Component {
           <View>订单统计</View>
           <View className='templates'>
           <View className='adaption memberNumber'>
-              <View>12</View>
+              <View><Text className='colorRed font36'>12</Text></View>
               <View><Text className='colorGray'>当日订单</Text></View>
             </View>
             <View className='adaption memberNumber'>
-              <View>12</View>
+              <View><Text className='colorRed font36'>12</Text></View>
               <View><Text className='colorGray'>当日订单</Text></View>
             </View>
           </View>
