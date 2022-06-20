@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import Taro from '@tarojs/taro'
 
-import { View, Text, Image, Input, ScrollView } from '@tarojs/components'
+import { View, Text, Image, Input, ScrollView, Button } from '@tarojs/components'
 import './index.scss'
 import imgSrc from '../../images/img.png'
 
@@ -29,6 +29,8 @@ export default class Index extends Component {
     const scrollTop = 0
     const Threshold = 20
 
+    const maskVisible = true
+    const animaFlag = false
 
 
     return (
@@ -158,6 +160,34 @@ export default class Index extends Component {
           </View>
 
         </View>
+
+
+
+
+        {
+          <View className={maskVisible ? 'mask' : 'mask_down'}
+            // style={animaFlag ? {visibility: "hidden"} : ''}
+            // 为了避免第一次加载时会出现动画效果
+            style={animaFlag ? { visibility: "hidden" } : ''}
+            onClick={this.changeVisible}>
+            <View className={maskVisible ? 'pop' : 'pop_down'}>
+
+              <View className='marginTop'>
+                <Input className='codeInput' type='text' placeholder='请输洗衣码或手机号' focus />
+              </View>
+              <View className='buttonMain'>
+                <Button className='btn-orage' type='primary' hoverClass='btn-orage-hover'>查询</Button>
+              </View>
+
+
+            </View>
+          </View>
+        }
+
+
+
+
+
       </View>
 
     )

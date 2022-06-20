@@ -1,6 +1,7 @@
 export default defineAppConfig({
   pages: [
     'pages/order/index',
+    'pages/grounding/index',
     'pages/details/index',
     'pages/user/index',
     'pages/profit/index',
@@ -25,11 +26,21 @@ borderStyle: "black",
           text: "订单"
       },
       {
-          pagePath: "pages/user/index",
-          iconPath: "tabBar/user.png",
-          selectedIconPath: "tabBar/usercon.png",
-          text: "我的"
-      }
+        pagePath: "pages/grounding/index",
+        iconPath: "tabBar/grounding.png",
+        selectedIconPath: "tabBar/groundingcon.png",
+        text: "上架"
+    },
+    {
+      pagePath: "pages/user/index",
+      iconPath: "tabBar/user.png",
+      selectedIconPath: "tabBar/usercon.png",
+      text: "我的"
+  }
+
+
+      
+
   ]
 },
 permission: {
